@@ -1,0 +1,131 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0px;
+    min-width: 800px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f3;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    border: #a3a2a2 solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header h1, footer h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    border: #a3a2a2 solid 1px;
+}
+
+.nav div {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: left;
+    background-color: #ffffff;
+    height: 300px;
+    padding: 10px;
+    border: #a3a2a2 solid 1px;
+}
+
+.foto-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9c9d9;
+    width: 70%;
+    height: 100%;
+    font-size: 1.5em;
+    border: #a3a2a2 solid 1px;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 500px;
+}
+
+.news-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: text-top;
+    justify-content: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 0 0 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+.news-card h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    align-items: start;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 10px;
+    border: #a3a2a2 solid 1px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 10px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.feature-card h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d966;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    border: #a3a2a2 solid 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

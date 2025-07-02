@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Info</title>
+</head>
+<body>
+  <h2>Consulta de IP</h2>
+  <input type="text" id="ipInput"/>
+  <button onclick="lookupIP()">Consultar</button>
+
+  <div id="result"></div>
+
+  <script>
+    const token = "0133ea5d6d0289";
+
+    function lookupIP() {
+      const ip = document.getElementById('ipInput').value.trim();
+      const url = `https://ipinfo.io/${ip}/json?token=${token}`;
+
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error("Erro na API");
+          return response.json();
+        })
+        .then(data => {
+          let html = "<h3>Resultados:</h3><ul>";
+          for (const key in data) {
+            html += `<li><strong>${key}:</strong> ${data[key]}</li>`;
+          }
+          html += "</ul>";
+          document.getElementById("result").innerHTML = html;
+        })
+        .catch(error => {
+          console.error("Erro:", error);
+          document.getElementById("result").innerHTML = "<p style='color:red;'>Erro ao obter dados</p>";
+        });
+    }
+  </script>
+</body>
+</html>
